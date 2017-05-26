@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0B7FD21ED866AA00079002 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D0B7FD11ED866AA00079002 /* Feed.storyboard */; };
+		0D0B7FD41ED8674D00079002 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B7FD31ED8674D00079002 /* Identifiers.swift */; };
+		0D0B7FD61ED867AC00079002 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B7FD51ED867AC00079002 /* UIExtensions.swift */; };
+		0D0B7FD91ED88E6500079002 /* BeatPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B7FD81ED88E6500079002 /* BeatPadView.swift */; };
+		0D0B7FDB1ED88E7200079002 /* BeatPadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D0B7FDA1ED88E7200079002 /* BeatPadView.xib */; };
 		0D3ED8991ED7897D00DC2C32 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ED8981ED7897D00DC2C32 /* AppViewController.swift */; };
 		0D3ED89E1ED78A2600DC2C32 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ED89D1ED78A2600DC2C32 /* FeedViewController.swift */; };
+		0D3ED8A01ED795AD00DC2C32 /* FeedItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ED89F1ED795AD00DC2C32 /* FeedItemCell.swift */; };
 		0DEEE83D1ED63F1700831D7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEE83C1ED63F1700831D7C /* AppDelegate.swift */; };
 		0DEEE8421ED63F1700831D7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DEEE8401ED63F1700831D7C /* Main.storyboard */; };
 		0DEEE8441ED63F1700831D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DEEE8431ED63F1700831D7C /* Assets.xcassets */; };
@@ -35,8 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0B7FD11ED866AA00079002 /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		0D0B7FD31ED8674D00079002 /* Identifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifiers.swift; path = App/Identifiers.swift; sourceTree = "<group>"; };
+		0D0B7FD51ED867AC00079002 /* UIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExtensions.swift; path = App/UIExtensions.swift; sourceTree = "<group>"; };
+		0D0B7FD81ED88E6500079002 /* BeatPadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeatPadView.swift; path = BeatPad/BeatPadView.swift; sourceTree = "<group>"; };
+		0D0B7FDA1ED88E7200079002 /* BeatPadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BeatPadView.xib; path = BeatPad/BeatPadView.xib; sourceTree = "<group>"; };
 		0D3ED8981ED7897D00DC2C32 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppViewController.swift; path = App/AppViewController.swift; sourceTree = "<group>"; };
 		0D3ED89D1ED78A2600DC2C32 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		0D3ED89F1ED795AD00DC2C32 /* FeedItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemCell.swift; sourceTree = "<group>"; };
 		0DEEE8391ED63F1700831D7C /* BeatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DEEE83C1ED63F1700831D7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DEEE8411ED63F1700831D7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,10 +88,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0B7FD71ED88E3E00079002 /* BeatPad */ = {
+			isa = PBXGroup;
+			children = (
+				0D0B7FD81ED88E6500079002 /* BeatPadView.swift */,
+				0D0B7FDA1ED88E7200079002 /* BeatPadView.xib */,
+			);
+			name = BeatPad;
+			sourceTree = "<group>";
+		};
 		0D3ED8971ED7895000DC2C32 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				0D3ED8981ED7897D00DC2C32 /* AppViewController.swift */,
+				0D0B7FD51ED867AC00079002 /* UIExtensions.swift */,
+				0D0B7FD31ED8674D00079002 /* Identifiers.swift */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -88,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				0D3ED89D1ED78A2600DC2C32 /* FeedViewController.swift */,
+				0D3ED89F1ED795AD00DC2C32 /* FeedItemCell.swift */,
+				0D0B7FD11ED866AA00079002 /* Feed.storyboard */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -118,6 +143,7 @@
 				0DEEE83C1ED63F1700831D7C /* AppDelegate.swift */,
 				0DEEE8401ED63F1700831D7C /* Main.storyboard */,
 				0D3ED8971ED7895000DC2C32 /* App */,
+				0D0B7FD71ED88E3E00079002 /* BeatPad */,
 				0D3ED89C1ED78A2600DC2C32 /* Feed */,
 				0DEEE8431ED63F1700831D7C /* Assets.xcassets */,
 				0DEEE8451ED63F1700831D7C /* LaunchScreen.storyboard */,
@@ -255,7 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DEEE8471ED63F1700831D7C /* LaunchScreen.storyboard in Resources */,
+				0D0B7FDB1ED88E7200079002 /* BeatPadView.xib in Resources */,
 				0DEEE8441ED63F1700831D7C /* Assets.xcassets in Resources */,
+				0D0B7FD21ED866AA00079002 /* Feed.storyboard in Resources */,
 				0DEEE8421ED63F1700831D7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,8 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0B7FD91ED88E6500079002 /* BeatPadView.swift in Sources */,
+				0D3ED8A01ED795AD00DC2C32 /* FeedItemCell.swift in Sources */,
 				0D3ED8991ED7897D00DC2C32 /* AppViewController.swift in Sources */,
 				0D3ED89E1ED78A2600DC2C32 /* FeedViewController.swift in Sources */,
+				0D0B7FD61ED867AC00079002 /* UIExtensions.swift in Sources */,
+				0D0B7FD41ED8674D00079002 /* Identifiers.swift in Sources */,
 				0DEEE83D1ED63F1700831D7C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Feed View Controller-->
+        <scene sceneID="15q-g9-XqS">
+            <objects>
+                <collectionViewController storyboardIdentifier="FeedViewController" id="otz-n4-1Hk" customClass="FeedViewController" customModule="BeatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ose-2h-aB2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="E4z-kz-S7r">
+                            <size key="itemSize" width="375" height="415"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeedItemCell" id="9Qk-FT-uxy" customClass="FeedItemCell" customModule="BeatApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="415"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="415"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="td4-bu-nBe" userLabel="BeatPad Container View">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJ5-xt-MzD" userLabel="Info View">
+                                            <rect key="frame" x="0.0" y="375" width="375" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="Joi-vX-eGS"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="FJ5-xt-MzD" firstAttribute="leading" secondItem="9Qk-FT-uxy" secondAttribute="leading" id="3vN-i6-m46"/>
+                                    <constraint firstItem="td4-bu-nBe" firstAttribute="top" secondItem="9Qk-FT-uxy" secondAttribute="top" id="GJ0-pp-slZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="FJ5-xt-MzD" secondAttribute="trailing" id="PWb-8h-Klz"/>
+                                    <constraint firstItem="td4-bu-nBe" firstAttribute="leading" secondItem="9Qk-FT-uxy" secondAttribute="leading" id="a0B-Ns-EmQ"/>
+                                    <constraint firstItem="FJ5-xt-MzD" firstAttribute="top" secondItem="td4-bu-nBe" secondAttribute="bottom" id="gcu-fj-NXT"/>
+                                    <constraint firstAttribute="trailing" secondItem="td4-bu-nBe" secondAttribute="trailing" id="sag-HI-XAf"/>
+                                    <constraint firstAttribute="bottom" secondItem="FJ5-xt-MzD" secondAttribute="bottom" id="x8N-Uy-X3M"/>
+                                </constraints>
+                                <size key="customSize" width="375" height="415"/>
+                                <connections>
+                                    <outlet property="beatPadContainerView" destination="td4-bu-nBe" id="N6e-hl-gje"/>
+                                    <outlet property="infoView" destination="FJ5-xt-MzD" id="ehK-jQ-0K3"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="otz-n4-1Hk" id="DEW-U2-0zc"/>
+                            <outlet property="delegate" destination="otz-n4-1Hk" id="G2u-aT-9lc"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="gut-Yj-ETC"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ng1-Jw-UHH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460.8695652173915" y="184.23913043478262"/>
+        </scene>
+    </scenes>
+</document>

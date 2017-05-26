@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12120"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LVJ-ha-0pU" customClass="BeatPadView" customModule="BeatApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SoG-xH-Why" userLabel="Beat1 View">
+                    <rect key="frame" x="0.0" y="0.0" width="187" height="187"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3u5-YJ-940" userLabel="Beat2 View">
+                    <rect key="frame" x="188" y="0.0" width="187" height="187"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTe-Or-cOK" userLabel="Beat3 View">
+                    <rect key="frame" x="0.0" y="188" width="187" height="187"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mnd-4Y-eKN" userLabel="Beat4 View">
+                    <rect key="frame" x="188" y="188" width="187" height="187"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SoG-xH-Why" firstAttribute="leading" secondItem="LVJ-ha-0pU" secondAttribute="leading" id="3vu-Hq-Gvg"/>
+                <constraint firstItem="3u5-YJ-940" firstAttribute="leading" secondItem="LVJ-ha-0pU" secondAttribute="centerX" constant="0.5" id="96A-WT-nEc"/>
+                <constraint firstAttribute="centerY" secondItem="SoG-xH-Why" secondAttribute="bottom" constant="0.5" id="9x0-0M-hW0"/>
+                <constraint firstAttribute="centerX" secondItem="JTe-Or-cOK" secondAttribute="trailing" constant="0.5" id="FO7-QP-jya"/>
+                <constraint firstAttribute="bottom" secondItem="JTe-Or-cOK" secondAttribute="bottom" id="Fhl-FB-BkV"/>
+                <constraint firstAttribute="trailing" secondItem="3u5-YJ-940" secondAttribute="trailing" id="I5P-ny-EZf"/>
+                <constraint firstItem="Mnd-4Y-eKN" firstAttribute="top" secondItem="LVJ-ha-0pU" secondAttribute="centerY" constant="0.5" id="NWB-QD-p4f"/>
+                <constraint firstItem="3u5-YJ-940" firstAttribute="top" secondItem="LVJ-ha-0pU" secondAttribute="top" id="TLv-Lh-0xx"/>
+                <constraint firstAttribute="trailing" secondItem="Mnd-4Y-eKN" secondAttribute="trailing" id="YZE-P6-Yzg"/>
+                <constraint firstAttribute="centerY" secondItem="3u5-YJ-940" secondAttribute="bottom" constant="0.5" id="aeW-9A-PJe"/>
+                <constraint firstItem="Mnd-4Y-eKN" firstAttribute="leading" secondItem="LVJ-ha-0pU" secondAttribute="centerX" constant="0.5" id="eNG-vO-BIH"/>
+                <constraint firstAttribute="bottom" secondItem="Mnd-4Y-eKN" secondAttribute="bottom" id="sUi-ft-enY"/>
+                <constraint firstItem="SoG-xH-Why" firstAttribute="top" secondItem="LVJ-ha-0pU" secondAttribute="top" id="t8l-6l-ZED"/>
+                <constraint firstItem="JTe-Or-cOK" firstAttribute="top" secondItem="LVJ-ha-0pU" secondAttribute="centerY" constant="0.5" id="x92-37-Af1"/>
+                <constraint firstAttribute="centerX" secondItem="SoG-xH-Why" secondAttribute="trailing" constant="0.5" id="xUj-Ur-T2b"/>
+                <constraint firstItem="JTe-Or-cOK" firstAttribute="leading" secondItem="LVJ-ha-0pU" secondAttribute="leading" id="yX2-vU-g2M"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-34" y="62"/>
+        </view>
+    </objects>
+</document>

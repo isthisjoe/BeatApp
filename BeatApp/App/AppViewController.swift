@@ -9,27 +9,19 @@
 import UIKit
 
 class AppViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    var appNavigationController: UINavigationController!
+    var feedViewController: FeedViewController!
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == Identifiers.appNavigationEmbedSegue {
+            if let appNavigationController = segue.destination as? UINavigationController,
+                let feedViewController = UIStoryboard.feed().instantiateViewController(withIdentifier: Identifiers.feedViewController)
+                    as? FeedViewController {
+                appNavigationController.viewControllers = [feedViewController]
+                self.appNavigationController = appNavigationController
+                self.feedViewController = feedViewController
+            }
+        }
     }
-    */
-
 }
