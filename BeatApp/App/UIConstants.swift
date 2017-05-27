@@ -1,5 +1,5 @@
 //
-//  Identifiers.swift
+//  UIConstants.swift
 //  BeatApp
 //
 //  Created by Joe Nguyen on 26/5/17.
