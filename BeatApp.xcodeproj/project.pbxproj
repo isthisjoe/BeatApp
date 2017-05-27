@@ -21,6 +21,7 @@
 		0DEEE8471ED63F1700831D7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DEEE8451ED63F1700831D7C /* LaunchScreen.storyboard */; };
 		0DEEE8521ED63F1800831D7C /* BeatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEE8511ED63F1800831D7C /* BeatAppTests.swift */; };
 		0DEEE85D1ED63F1800831D7C /* BeatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEE85C1ED63F1800831D7C /* BeatAppUITests.swift */; };
+		D6D5FE2CF1C144BC2A7919F4 /* Pods_BeatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D7CB2DACD1275E35882D7D /* Pods_BeatApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,9 @@
 		0DEEE8581ED63F1800831D7C /* BeatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DEEE85C1ED63F1800831D7C /* BeatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatAppUITests.swift; sourceTree = "<group>"; };
 		0DEEE85E1ED63F1800831D7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A48DCE7CED837CDF00B2FC66 /* Pods-BeatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeatApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeatApp/Pods-BeatApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C29C31101B027C2DCB66F188 /* Pods-BeatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeatApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeatApp/Pods-BeatApp.release.xcconfig"; sourceTree = "<group>"; };
+		E6D7CB2DACD1275E35882D7D /* Pods_BeatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6D5FE2CF1C144BC2A7919F4 /* Pods_BeatApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +129,8 @@
 				0DEEE8501ED63F1800831D7C /* BeatAppTests */,
 				0DEEE85B1ED63F1800831D7C /* BeatAppUITests */,
 				0DEEE83A1ED63F1700831D7C /* Products */,
+				A2FE359E224884E552856DE4 /* Pods */,
+				6547C289E49C817AD723D146 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +177,23 @@
 			path = BeatAppUITests;
 			sourceTree = "<group>";
 		};
+		6547C289E49C817AD723D146 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6D7CB2DACD1275E35882D7D /* Pods_BeatApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2FE359E224884E552856DE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A48DCE7CED837CDF00B2FC66 /* Pods-BeatApp.debug.xcconfig */,
+				C29C31101B027C2DCB66F188 /* Pods-BeatApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DEEE8611ED63F1800831D7C /* Build configuration list for PBXNativeTarget "BeatApp" */;
 			buildPhases = (
+				45D8A32025A33841B62C2FD2 /* [CP] Check Pods Manifest.lock */,
 				0DEEE8351ED63F1700831D7C /* Sources */,
 				0DEEE8361ED63F1700831D7C /* Frameworks */,
 				0DEEE8371ED63F1700831D7C /* Resources */,
+				77CCACE713A5CEC59A732ABE /* [CP] Embed Pods Frameworks */,
+				F27894AA48C3B17C9B587966 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,6 +330,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45D8A32025A33841B62C2FD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		77CCACE713A5CEC59A732ABE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeatApp/Pods-BeatApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F27894AA48C3B17C9B587966 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeatApp/Pods-BeatApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0DEEE8351ED63F1700831D7C /* Sources */ = {
@@ -465,6 +540,7 @@
 		};
 		0DEEE8621ED63F1800831D7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A48DCE7CED837CDF00B2FC66 /* Pods-BeatApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TUDQ826894;
@@ -478,6 +554,7 @@
 		};
 		0DEEE8631ED63F1800831D7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29C31101B027C2DCB66F188 /* Pods-BeatApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TUDQ826894;
